@@ -1,0 +1,613 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+:root {
+  /* kleuren */
+  --color-text: #111;
+  --color-background: #eee;
+  --main-color-blue: #81b1ff;
+  --second-main-color: #ff8082;
+
+  /* font size */
+  --regular-text: 25px;
+  --heading--h2: 300px;
+  --headin-h3: 200px;
+}
+
+@font-face {
+  font-family: alexandriaExtraBold;
+  src: url(fonts/alexandria-font-family-1763028502-0/Alexandria-ExtraBold-BF6690948c9b4b0.ttf);
+}
+
+@font-face {
+  font-family: playwriteRegular;
+  src: url(fonts/playwrite-usa-traditional/PlaywriteUSTrad-VariableFont_wght.ttf);
+}
+
+main {
+  padding-bottom: 20rem;
+}
+
+h1,
+h2,
+p,
+a {
+  font-family: alexandriaExtraBold;
+  font-size: 4rem;
+  list-style-type: none;
+  color: var(--color-text);
+}
+
+h1 {
+  font-size: 50px;
+  border-bottom: solid black 5px;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+h2 {
+  font-size: var(--heading--h2);
+}
+
+h3 {
+  font-family: playwriteRegular;
+  font-size: var(--headin-h3);
+  position: absolute;
+  left: 10%;
+  bottom: -30%;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+}
+
+button {
+  align-self: center;
+  margin: 10px 0;
+  padding: 1%;
+  max-width: 35vw;
+  border-radius: 10px;
+  background-color: var(--second-main-color);
+
+  a {
+    font-size: 20px;
+  }
+}
+
+/* section {
+  padding: 0 20px;
+} */
+
+section div:first-of-type {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+/* Eerste section introduction */
+
+section:first-of-type {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section:first-of-type div:nth-of-type(3) {
+  width: 100vw;
+  background-color: var(--second-main-color);
+  display: flex;
+  justify-content: center;
+}
+
+section:first-of-type div:nth-of-type(3) button {
+  background-color: var(--color-background);
+}
+
+section:first-of-type div:first-of-type {
+  padding: 5rem;
+  padding-bottom: 30rem;
+  position: relative;
+}
+
+section:first-of-type div:first-of-type h2 {
+  font-size: 20vw;
+}
+
+section:first-of-type div:first-of-type h3 {
+  padding: none;
+  color: var(--main-color-blue);
+  font-size: 12vw;
+  left: 50%;
+  bottom: -50%;
+}
+
+@media (width < 500px) {
+  h1 {
+    font-size: 20px;
+    border-bottom: solid black 2px;
+    margin-bottom: 3rem;
+  }
+}
+
+/* introdution text */
+
+section:first-of-type div:nth-of-type(2),
+section:nth-of-type(2) {
+  display: flex;
+  background-color: var(--second-main-color);
+  padding: 5rem;
+  padding-bottom: 11rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+section:first-of-type div:nth-of-type(2) p {
+  width: 35%;
+  padding-right: 10rem;
+}
+
+section:first-of-type div:nth-of-type(2) img {
+  max-width: 100%;
+  max-height: 65rem;
+  margin: 50px;
+}
+
+section:first-of-type div:nth-of-type(2) img:nth-of-type(2) {
+  transform: translateY(-30%);
+}
+
+@media (width < 500px) {
+  section:first-of-type div:first-of-type {
+    padding: 0;
+  }
+
+  section:first-of-type div:first-of-type h2 {
+    font-size: 50px;
+  }
+
+  section:first-of-type div:first-of-type h3 {
+    font-size: 45px;
+  }
+
+  section:first-of-type div:nth-of-type(2) p {
+    font-size: 20px;
+    width: 100vw;
+    padding: 1rem;
+  }
+
+  section:first-of-type div:nth-of-type(2) {
+    padding: 0;
+  }
+
+  section:first-of-type div:nth-of-type(2) img {
+    display: none;
+  }
+
+  section:first-of-type div:nth-of-type(2) img:last-of-type {
+    display: block;
+    width: 50vw;
+  }
+}
+
+/* contents */
+section:nth-of-type(2) {
+  flex-direction: column;
+}
+
+section:nth-of-type(2) div:first-of-type {
+  display: flex;
+  justify-content: end;
+  align-self: end;
+  z-index: 2;
+  margin: 4rem 0;
+  width: 50%;
+  padding: 4rem 0;
+  border-bottom: solid black 8px;
+  border-top: solid black 8px;
+}
+
+section:nth-of-type(2) div:nth-of-type(2) {
+  display: flex;
+}
+
+section:nth-of-type(2) div:nth-of-type(2) img {
+  width: 50vw;
+  transform: translateY(-13rem);
+}
+
+section:nth-of-type(2) div:nth-of-type(2) ul {
+  text-decoration-line: underline;
+
+  li {
+    font-size: 5rem;
+    a {
+      font-size: 5rem;
+      padding-left: 5rem;
+    }
+  }
+}
+
+@media (width < 500px) {
+  h2 {
+    font-size: 50px;
+  }
+
+  h3 {
+    font-size: 30px;
+  }
+
+  p {
+    font-size: 20px;
+  }
+
+  section:first-of-type div:first-of-type {
+    position: relative;
+  }
+
+  section:first-of-type div:first-of-type h3 {
+    left: 4rem;
+  }
+  section:nth-of-type(2) {
+    padding: 6rem 0;
+  }
+
+  section:first-of-type div:nth-of-type(2) {
+    padding: 0;
+    margin-top: 3rem;
+  }
+
+  section:nth-of-type(2) div:nth-of-type(2) {
+    padding: 1rem;
+  }
+
+  section:nth-of-type(2) div:nth-of-type(2) img {
+    transform: none;
+    margin-right: 1rem;
+  }
+
+  section:nth-of-type(2) div:first-of-type {
+    justify-content: start;
+    width: auto;
+    border-bottom: solid black 2px;
+    border-top: solid black 2px;
+
+    h2 {
+      padding: 0 1rem;
+    }
+  }
+
+  section:nth-of-type(2) div:nth-of-type(2) ul li {
+    font-size: 0;
+  }
+
+  section:nth-of-type(2) div:nth-of-type(2) ul li a {
+    font-size: 20px;
+    padding-left: 0;
+  }
+
+  section:nth-of-type(2) div:first-of-type {
+    margin: 0;
+    padding: 0;
+  }
+
+  #sectionInfoDesign h3 {
+    font-size: 25px;
+  }
+}
+
+/* I used the ID because it's there for the contents and i 
+can reuse this for the styling, so i can add  
+things above different sections later */
+
+/* Information design */
+/* from here on mobile first woopsie */
+#sectionInfoDesign {
+  background-color: var(--main-color-blue);
+  color: var(--color-background);
+  padding-bottom: 3rem;
+}
+
+#sectionInfoDesign {
+  padding: 0 20px;
+}
+
+#sectionInfoDesign div:nth-of-type(3) {
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#sectionInfoDesign div:nth-of-type(3) img {
+  width: 44vw;
+}
+
+#sectionInfoDesign p:first-of-type,
+#sectionInfoDesign p:nth-of-type(2) {
+  font-size: 17px;
+}
+
+/* project frontend  */
+#sectionFrontend {
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  color: var(--second-main-color);
+}
+
+#sectionFrontend p:first-of-type,
+#sectionFrontend p:nth-of-type(2) {
+  font-size: 17px;
+}
+
+/* section programming */
+
+#sectionProgramming {
+  background-color: var(--second-main-color);
+  margin-top: 1rem;
+  padding: 1rem 20px;
+
+  h3 {
+    color: var(--color-background);
+  }
+
+  button {
+    background-color: var(--color-background);
+  }
+
+  p:first-of-type,
+  p:nth-of-type(2) {
+    font-size: 17px;
+  }
+}
+
+#sectionTech {
+  padding: 1rem 20px;
+  margin-top: 1rem;
+
+  p:first-of-type,
+  p:nth-of-type(2) {
+    font-size: 17px;
+  }
+  video {
+    width: 330px;
+    margin: 10px 0;
+  }
+  button a {
+    font-size: 17px;
+  }
+
+  h2 {
+    color: var(--main-color-blue);
+  }
+}
+
+/* ipad fixes */
+
+@media (width >= 600px) and (width < 1023px) {
+  h2 {
+    font-size: 50px;
+  }
+
+  h3,
+  h1 {
+    font-size: 40px;
+  }
+
+  p,
+  a,
+  section:nth-of-type(2) div:nth-of-type(2) ul li a {
+    font-size: 25px;
+    width: 50vw;
+    padding-left: 0;
+  }
+
+  section:nth-of-type(2) div:nth-of-type(2) ul li {
+    font-size: 2rem;
+  }
+
+  section:first-of-type div:nth-of-type(2) p {
+    width: 60%;
+    padding-right: 10px;
+  }
+
+  section:first-of-type div:first-of-type h3 {
+    left: 40%;
+    bottom: 0%;
+  }
+
+  section:first-of-type div:nth-of-type(2) img {
+    width: 35%;
+    height: 100%;
+    margin: 0;
+  }
+
+  section:first-of-type div:nth-of-type(2) img:nth-of-type(2),
+  section:first-of-type div:nth-of-type(2) img:nth-of-type(3) {
+    display: none;
+  }
+
+  section:first-of-type div:first-of-type {
+    padding-bottom: 5rem;
+  }
+
+  section:first-of-type div:nth-of-type(2),
+  section:nth-of-type(2) {
+    padding-bottom: 3rem;
+  }
+
+  section:nth-of-type(2) div:first-of-type {
+    padding: 1rem 0;
+    border-bottom: solid black 4px;
+    border-top: solid black 4px;
+  }
+
+  section:nth-of-type(2) div:nth-of-type(2) img {
+    transform: translateY(-8rem);
+    margin-right: 1rem;
+  }
+
+  #sectionInfoDesign div:nth-of-type(2) div:nth-of-type(2) {
+    flex-wrap: no-wrap;
+    flex-direction: column;
+    order: 1;
+  }
+
+  #sectionInfoDesign div:nth-of-type(2) {
+    display: flex;
+  }
+}
+
+@media (width > 1023px) {
+  #sectionFrontend,
+  #sectionTech,
+  #sectionInfoDesign,
+  #sectionProgramming {
+    padding-top: 10%;
+    padding-bottom: 10%;
+  }
+
+  section:first-of-type div:first-of-type h3 {
+    bottom: 10%;
+    left: 41%;
+  }
+
+  button a,
+  #sectionTech button a {
+    font-size: 50px;
+  }
+
+  #sectionInfoDesign div:nth-of-type(2) div:nth-of-type(2) {
+    flex-wrap: no-wrap;
+    flex-direction: column;
+  }
+
+  #sectionInfoDesign div:nth-of-type(2) div:nth-of-type(1) {
+    max-width: 40vw;
+    justify-content: center;
+  }
+
+  #sectionInfoDesign div:nth-of-type(2) div:nth-of-type(2) img {
+    max-width: 100%;
+    margin: 10px 10px;
+  }
+
+  #sectionInfoDesign div:nth-of-type(2) {
+    display: flex;
+    flex-direction: row;
+  }
+
+  #sectionInfoDesign {
+    padding: 10% 10vw;
+  }
+
+  #sectionInfoDesign p:first-of-type,
+  #sectionInfoDesign p:nth-of-type(2),
+  #sectionFrontend p:first-of-type,
+  #sectionFrontend p:nth-of-type(2),
+  #sectionProgramming p:first-of-type,
+  #sectionProgramming p:nth-of-type(2),
+  #sectionTech p:first-of-type,
+  #sectionTech p:nth-of-type(2) {
+    font-size: 50px;
+  }
+
+  #sectionInfoDesign p:last-of-type {
+    font-size: 4rem;
+  }
+
+  #sectionTech video {
+    width: 80vw;
+    margin-bottom: 5rem;
+  }
+
+  #sectionTech p {
+    width: 80vw;
+    margin-right: 10vw;
+  }
+
+  #sectionTech button {
+    margin-top: 15rem;
+    margin-right: 10vw;
+  }
+
+  #sectionTech div:first-of-type {
+    width: 50vw;
+    border-bottom: solid black 8px;
+    border-top: solid black 8px;
+  }
+
+  #sectionFrontend {
+    margin: 0 10vw;
+  }
+
+  #sectionFrontend div:nth-of-type(2) {
+    display: flex;
+    padding: 10rem 0;
+  }
+
+  #sectionFrontend div:nth-of-type(2) div:first-of-type,
+  #sectionFrontend div:nth-of-type(2) div:nth-of-type(2) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #sectionFrontend div:nth-of-type(2) div:first-of-type p {
+    width: 40vw;
+  }
+
+  #sectionFrontend div:nth-of-type(2) img {
+    width: 40vw;
+  }
+
+  #sectionProgramming {
+    padding: 10% 10vw;
+  }
+  #sectionProgramming div {
+    display: flex;
+    flex-direction: row;
+  }
+
+  /* #sectionProgramming div:nth-of-type(2) {
+    padding: 10rem 10vw;
+  } */
+
+  #sectionProgramming div img {
+    width: 45vw;
+  }
+
+  #sectionProgramming div div {
+    flex-direction: column;
+    width: 50vw;
+    margin-left: 30px;
+  }
+
+  #sectionTech {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+  }
+
+  section div:first-of-type {
+    margin-bottom: 20rem;
+    gap: 4rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #sectionTech div:nth-of-type(2) {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+}
