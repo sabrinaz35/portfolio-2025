@@ -14,8 +14,8 @@
 
   /* font size */
   --regular-text: 25px;
-  --heading--h2: 300px;
-  --headin-h3: 200px;
+  --heading--h2: 60px;
+  --headin-h3: 55px;
 }
 
 @font-face {
@@ -37,13 +37,13 @@ h2,
 p,
 a {
   font-family: alexandriaExtraBold;
-  font-size: 4rem;
+  font-size: 1.5rem;
   list-style-type: none;
   color: var(--color-text);
 }
 
 h1 {
-  font-size: 50px;
+  font-size: 20px;
   border-bottom: solid black 5px;
   width: 100vw;
   display: flex;
@@ -60,7 +60,7 @@ h3 {
   font-size: var(--headin-h3);
   position: absolute;
   left: 10%;
-  bottom: -30%;
+  bottom: -60%;
 }
 
 img {
@@ -116,7 +116,7 @@ section:first-of-type div:nth-of-type(3) button {
 
 section:first-of-type div:first-of-type {
   padding: 5rem;
-  padding-bottom: 30rem;
+  padding-bottom: 5rem;
   position: relative;
 }
 
@@ -132,7 +132,7 @@ section:first-of-type div:first-of-type h3 {
   bottom: -50%;
 }
 
-@media (width < 500px) {
+@media (width < 450px) {
   h1 {
     font-size: 20px;
     border-bottom: solid black 2px;
@@ -153,8 +153,14 @@ section:nth-of-type(2) {
 }
 
 section:first-of-type div:nth-of-type(2) p {
-  width: 35%;
   padding-right: 10rem;
+}
+
+@media (width>450px) {
+  section:first-of-type div:nth-of-type(2) p {
+    width: 45%;
+    padding-right: 1rem;
+  }
 }
 
 section:first-of-type div:nth-of-type(2) img {
@@ -163,11 +169,19 @@ section:first-of-type div:nth-of-type(2) img {
   margin: 50px;
 }
 
+@media (width>700px) {
+  section:first-of-type div:nth-of-type(2) img {
+    max-width: 100%;
+    max-height: 15rem;
+    margin: 5px;
+  }
+}
+
 section:first-of-type div:nth-of-type(2) img:nth-of-type(2) {
   transform: translateY(-30%);
 }
 
-@media (width < 500px) {
+@media (width < 450px) {
   section:first-of-type div:first-of-type {
     padding: 0;
   }
@@ -230,15 +244,15 @@ section:nth-of-type(2) div:nth-of-type(2) ul {
   text-decoration-line: underline;
 
   li {
-    font-size: 5rem;
+    font-size: 25px;
     a {
-      font-size: 5rem;
+      font-size: 25px;
       padding-left: 5rem;
     }
   }
 }
 
-@media (width < 500px) {
+@media (width < 450px) {
   h2 {
     font-size: 50px;
   }
@@ -394,7 +408,7 @@ things above different sections later */
 
 /* ipad fixes */
 
-@media (width >= 600px) and (width < 1023px) {
+@media (width > 450px) and (width < 1023px) {
   h2 {
     font-size: 50px;
   }
@@ -478,13 +492,13 @@ things above different sections later */
   }
 
   section:first-of-type div:first-of-type h3 {
-    bottom: 10%;
+    bottom: 0%;
     left: 41%;
   }
 
   button a,
   #sectionTech button a {
-    font-size: 50px;
+    font-size: 20px;
   }
 
   #sectionInfoDesign div:nth-of-type(2) div:nth-of-type(2) {
@@ -519,11 +533,11 @@ things above different sections later */
   #sectionProgramming p:nth-of-type(2),
   #sectionTech p:first-of-type,
   #sectionTech p:nth-of-type(2) {
-    font-size: 50px;
+    font-size: 20px;
   }
 
   #sectionInfoDesign p:last-of-type {
-    font-size: 4rem;
+    font-size: 1.5rem;
   }
 
   #sectionTech video {
@@ -537,7 +551,7 @@ things above different sections later */
   }
 
   #sectionTech button {
-    margin-top: 15rem;
+    margin-top: 5rem;
     margin-right: 10vw;
   }
 
@@ -553,7 +567,7 @@ things above different sections later */
 
   #sectionFrontend div:nth-of-type(2) {
     display: flex;
-    padding: 10rem 0;
+    padding: 5rem 0;
   }
 
   #sectionFrontend div:nth-of-type(2) div:first-of-type,
@@ -563,11 +577,12 @@ things above different sections later */
   }
 
   #sectionFrontend div:nth-of-type(2) div:first-of-type p {
-    width: 40vw;
+    width: 35vw;
   }
 
   #sectionFrontend div:nth-of-type(2) img {
-    width: 40vw;
+    width: 50vw;
+    max-height: fit-content;
   }
 
   #sectionProgramming {
@@ -599,8 +614,7 @@ things above different sections later */
   }
 
   section div:first-of-type {
-    margin-bottom: 20rem;
-    gap: 4rem;
+    gap: 1rem;
     display: flex;
     flex-direction: column;
   }
