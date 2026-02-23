@@ -13,7 +13,8 @@
   --second-main-color: #ff8082;
 
   /* font size */
-  --regular-text: 25px;
+  --small-tekxt: 15px;
+  --regular-text: 20px;
   --heading--h2: 60px;
   --headin-h3: 55px;
 }
@@ -37,13 +38,13 @@ h2,
 p,
 a {
   font-family: alexandriaExtraBold;
-  font-size: 1.5rem;
+  font-size: var(--regular-text);
   list-style-type: none;
   color: var(--color-text);
 }
 
 h1 {
-  font-size: 20px;
+  font-size: var(--regular-text);
   border-bottom: solid black 5px;
   width: 100vw;
   display: flex;
@@ -81,9 +82,9 @@ button {
   border-radius: 10px;
   background-color: var(--second-main-color);
 
-  a {
-    font-size: 20px;
-  }
+  /* a {
+    font-size: va;
+  } */
 }
 
 /* section {
@@ -134,7 +135,7 @@ section:first-of-type div:first-of-type h3 {
 
 @media (width < 450px) {
   h1 {
-    font-size: 20px;
+    font-size: var(--regular-text);
     border-bottom: solid black 2px;
     margin-bottom: 3rem;
   }
@@ -195,7 +196,7 @@ section:first-of-type div:nth-of-type(2) img:nth-of-type(2) {
   }
 
   section:first-of-type div:nth-of-type(2) p {
-    font-size: 20px;
+    font-size: var(--regular-text);
     width: 100vw;
     padding: 1rem;
   }
@@ -244,9 +245,9 @@ section:nth-of-type(2) div:nth-of-type(2) ul {
   text-decoration-line: underline;
 
   li {
-    font-size: 25px;
+    font-size: var(--regular-text);
     a {
-      font-size: 25px;
+      font-size: var(--regular-text);
       padding-left: 5rem;
     }
   }
@@ -262,7 +263,7 @@ section:nth-of-type(2) div:nth-of-type(2) ul {
   }
 
   p {
-    font-size: 20px;
+    font-size: var(--regular-text);
   }
 
   section:first-of-type div:first-of-type {
@@ -306,7 +307,7 @@ section:nth-of-type(2) div:nth-of-type(2) ul {
   }
 
   section:nth-of-type(2) div:nth-of-type(2) ul li a {
-    font-size: 20px;
+    font-size: var(--regular-text);
     padding-left: 0;
   }
 
@@ -348,7 +349,7 @@ things above different sections later */
 
 #sectionInfoDesign p:first-of-type,
 #sectionInfoDesign p:nth-of-type(2) {
-  font-size: 17px;
+  font-size: var(--small-tekxt);
 }
 
 /* project frontend  */
@@ -361,7 +362,7 @@ things above different sections later */
 
 #sectionFrontend p:first-of-type,
 #sectionFrontend p:nth-of-type(2) {
-  font-size: 17px;
+  font-size: var(--small-tekxt);
 }
 
 /* section programming */
@@ -381,7 +382,7 @@ things above different sections later */
 
   p:first-of-type,
   p:nth-of-type(2) {
-    font-size: 17px;
+    font-size: var(--small-tekxt);
   }
 }
 
@@ -391,14 +392,14 @@ things above different sections later */
 
   p:first-of-type,
   p:nth-of-type(2) {
-    font-size: 17px;
+    font-size: var(--small-tekxt);
   }
   video {
     width: 330px;
     margin: 10px 0;
   }
   button a {
-    font-size: 17px;
+    font-size: var(--small-tekxt);
   }
 
   h2 {
@@ -421,7 +422,7 @@ things above different sections later */
   p,
   a,
   section:nth-of-type(2) div:nth-of-type(2) ul li a {
-    font-size: 25px;
+    font-size: var(--regular-text);
     width: 50vw;
     padding-left: 0;
   }
@@ -498,7 +499,7 @@ things above different sections later */
 
   button a,
   #sectionTech button a {
-    font-size: 20px;
+    font-size: var(--regular-text);
   }
 
   #sectionInfoDesign div:nth-of-type(2) div:nth-of-type(2) {
@@ -533,16 +534,17 @@ things above different sections later */
   #sectionProgramming p:nth-of-type(2),
   #sectionTech p:first-of-type,
   #sectionTech p:nth-of-type(2) {
-    font-size: 20px;
+    font-size: var(--regular-text);
   }
 
   #sectionInfoDesign p:last-of-type {
-    font-size: 1.5rem;
+    font-size: var(--regular-text);
   }
 
   #sectionTech video {
-    width: 80vw;
+    width: 60vw;
     margin-bottom: 5rem;
+    align-self: center;
   }
 
   #sectionTech p {
